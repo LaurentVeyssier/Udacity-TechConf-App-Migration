@@ -31,11 +31,11 @@ In this project, the objectives are to:
 ### Part 2: Create and Publish Azure Function triggered by the service bus queue
 
 The Azure Function should do the following:
-         - Process the message which is the `notification_id`
-         - Query the database using `psycopg2` library for the given notification to retrieve the subject and message
-         - Query the database to retrieve a list of attendees (**email** and **first name**)
-         - Loop through each attendee and send a personalized subject message
-         - After the notification, update the notification status with the total number of attendees notified
+- Process the message which is the `notification_id`
+- Query the database using `psycopg2` library for the given notification to retrieve the subject and message
+- Query the database to retrieve a list of attendees (**email** and **first name**)
+- Loop through each attendee and send a personalized subject message
+- After the notification, update the notification status with the total number of attendees notified
 
 ### Part 3: Refactor `routes.py`
 Refactor the post logic in `web/app/routes.py -> notification()` using servicebus `queue_client`:
