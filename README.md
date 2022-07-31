@@ -65,13 +65,10 @@ This can also be evaluated using the convenient **Azure Pricing calculator tool*
 
 ## Architecture Explanation
 Reasoning behind the architecture selection for both the Azure Web App and Azure Function.
-- Web app
-the web ap is unlikely to require more than 14Gb of memory and 4 CPUs. The webapp S1 plan appears more practical than a Virtual Machine which would reequire significant administration
-Given the type of business, the traffic will remain quite low compared to ecommerce or BtoC businesses with a very large customer base
-For conference registration needs, the fully managed webapp service will simplify a lot the operations vs previous situation. This should be a very cost effective solution
-- Azure Function
-The azure function will operate in the background, off-loading the webapp with the task to process and send notification emails to participants. This tasks does not require to be executed with immediate effect and is a perfect candidate for a background job. Thanks to the consumption plan, the function will use its own resources and will rely on the webapp resources 
-The main benefits: It allows the task to securly run in the background and be scalable thanks to the consumption plan. The execution will improve compared to the looping and will eliminate all http timout 
+- Web app: The web ap is unlikely to require more than 14Gb of memory and 4 CPUs. The webapp S1 plan appears more practical than a Virtual Machine which would require significant administration and resources and will be a much more effective option long-term than previous onn-premise server.
+Given the type of business, the traffic will remain quite low compared to ecommerce or BtoC businesses having very large customer base. For conference registration needs, the fully managed webapp service will simplify a lot the operations vs previous situation. This should be a very cost effective solution also preventing downtime risks.
+- Azure Function: The azure function will operate in the background, off-loading the webapp with the task to process and send notification emails to participants. This tasks do not require to be executed with immediate effect and is a perfect candidate for a background job. Thanks to the consumption plan, the function will use its own resources and will not tap on the webapp resources. With such configuration, the fucntion will be able to auto scale very effectively while paying only for what is being consumed.
+The main benefits: It allows the task to securly run in the background and be scalable thanks to the consumption plan. The execution will improve compared to the looping and will eliminate all http timout.
 
 ## Output
 
