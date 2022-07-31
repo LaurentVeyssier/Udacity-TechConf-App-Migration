@@ -25,6 +25,9 @@ In this project, the objectives are to:
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 - [Azure Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
 
+
+warning note indicated by Udacity: the python package psycopg2 does not work directly in Azure; install `psycopg2-binary` instead to use the psycopg2 library in Azure
+
 ## Project Steps
 
 ### Part 1: Create Azure Resources and Deploy Web App
