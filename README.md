@@ -57,7 +57,7 @@ Cost analysis of each Azure resource providing an estimate total cost:
 | **TOTAL**                   |                      |**$99.05**    |
 |_____________________________|______________________|______________|
 - * per million operations per month unlikely to be exceeded
-- ** I use a F1 but such app might use a production plan - Start with S1 estimated here
+- ** I use a F1 but such app might use a production plan - I estimate an S1 plan here but a B1 could suffice at a much lower cost ($13) or B2 ($25) possibly cutting down the overall cost estimate by 2
 - *** Only pay what I use based on number of executions, length of execution and memory used - Free in year 1
 - **** Storage used by the function to store operation information - negligeable amount of data
 
