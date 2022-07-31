@@ -80,7 +80,7 @@ The main benefits: It allows the task to securly run in the background and be sc
 ![](screenshots/resource_group.jpg)
 
 
-- Front end app
+- Front-end web app
 
 ![](screenshots/web_app.jpg)
 
@@ -89,6 +89,7 @@ The main benefits: It allows the task to securly run in the background and be sc
 
 ![](screenshots/notification_email.jpg)
 
+
 - Notifications tracking in PostGre db
 
-![](screenshots/notifications.jpg)
+![](screenshots/notifications_workflow.jpg)
