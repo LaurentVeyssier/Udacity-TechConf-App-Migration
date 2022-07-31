@@ -72,3 +72,19 @@ For conference registration needs, the fully managed webapp service will simplif
 - Azure Function
 The azure function will operate in the background, off-loading the webapp with the task to process and send notification emails to participants. This tasks does not require to be executed with immediate effect and is a perfect candidate for a background job. Thanks to the consumption plan, the function will use its own resources and will rely on the webapp resources 
 The main benefits: It allows the task to securly run in the background and be scalable thanks to the consumption plan. The execution will improve compared to the looping and will eliminate all http timout 
+
+## Output
+
+- Resources implemented
+
+![](screenshots/resource_group.jpg)
+
+
+- Front end app
+
+![](screenshots/web_app.jpg)
+
+
+- Email notifications using SendGrid and PostGre db
+
+![](screenshots/notification email via SendGrid.jpg)
