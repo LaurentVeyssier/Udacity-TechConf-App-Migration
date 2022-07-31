@@ -75,7 +75,9 @@ The main benefits: It allows the task to securly run in the background and be sc
 
 ## Output
 
+- Resources implemented
 
+![](screenshots/resource_group.jpg)
 
 
 - Front-end web app
