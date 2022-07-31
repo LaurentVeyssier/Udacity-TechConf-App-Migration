@@ -57,6 +57,8 @@ Cost analysis of each Azure resource providing an estimate total cost:
 | **TOTAL**                   |                      |**$99.05**    |
 |_____________________________|______________________|______________|
 
+This can also be evaluated using the convenient **Azure Pricing calculator tool** available [here](https://azure.microsoft.com/en-in/pricing/calculator/).
+
 ## Architecture Explanation
 Reasoning behind the architecture selection for both the Azure Web App and Azure Function.
 - Web app
