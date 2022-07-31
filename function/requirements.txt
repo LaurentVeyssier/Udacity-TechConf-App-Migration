@@ -1,0 +1,7 @@
+# Do not include azure-functions-worker as it may conflict with the Azure Functions platform
+# python package psycopg2 does not work directly in Azure
+# install psycopg2-binary instead to use the psycopg2 library in Azure
+azure-functions
+sendgrid
+psycopg2-binary
+pytz
