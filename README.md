@@ -42,20 +42,20 @@ Refactor the post logic in `web/app/routes.py -> notification()` using servicebu
    - The notification method on POST should save the notification object and queue the notification id for the function to pick it up
 
 ## Monthly Cost Analysis
-Complete a month cost analysis of each Azure resource to give an estimate total cost using the table below:
+Cost analysis of each Azure resource providing an estimate total cost:
 
 | Azure Resource              | Service Tier         | Monthly Cost |
 | ----------------------------| -------------------- | ------------ |
 | *Azure Postgres Database*   | Basic,1vCore(s),5 Go |  $29.65      |
 | *Azure Service Bus*         |      Basic           |   $0.05*     | * per million operations per month unlikely to be exceeded
-| *Azure WebApp*              |      S1              |  $69.35      | I use a F1 but the "real" app might use a production plan - Start with S1
+| *Azure WebApp*              |      S1              |  $69.35      | I use a F1 but such app might use a production plan - Start with S1
 | *Azure Function*            |  Consumption plan    |     **       | ** only pay what I use based on number of executions, length of execution and memory used - Free in year 1
 | *Azure Storage*             |  Linked to Function  | negligeable  |  storage used by the function to store operation information - negligeable amount of data
 | **TOTAL**                   |                      |**$99.05**    |
 |_____________________________|______________________|______________|
 
 ## Architecture Explanation
-This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+Reasoning behind the architecture selection for both the Azure Web App and Azure Function.
 - Web app
 the web ap is unlikely to require more than 14Gb of memory and 4 CPUs. The webapp S1 plan appears more practical than a Virtual Machine which would reequire significant administration
 Given the type of business, the traffic will remain quite low compared to ecommerce or BtoC businesses with a very large customer base
