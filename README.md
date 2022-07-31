@@ -87,4 +87,8 @@ The main benefits: It allows the task to securly run in the background and be sc
 
 - Email notifications using SendGrid and PostGre db
 
-![](screenshots/notification email via SendGrid.jpg)
+![](screenshots/notification_email.jpg)
+
+- Notifications tracking in PostGre db
+
+![](screenshots/notifications.jpg)
