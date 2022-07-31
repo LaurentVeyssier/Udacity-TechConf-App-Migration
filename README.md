@@ -56,10 +56,10 @@ Cost analysis of each Azure resource providing an estimate total cost:
 | *Azure Storage*             |  Linked to Function  | negligeable  |
 | **TOTAL**                   |                      |**$99.05**    |
 |_____________________________|______________________|______________|
-* per million operations per month unlikely to be exceeded
-** I use a F1 but such app might use a production plan - Start with S1 estimated here
-*** Only pay what I use based on number of executions, length of execution and memory used - Free in year 1
-**** Storage used by the function to store operation information - negligeable amount of data
+- * per million operations per month unlikely to be exceeded
+- ** I use a F1 but such app might use a production plan - Start with S1 estimated here
+- *** Only pay what I use based on number of executions, length of execution and memory used - Free in year 1
+- **** Storage used by the function to store operation information - negligeable amount of data
 
 This can also be evaluated using the convenient **Azure Pricing calculator tool** available [here](https://azure.microsoft.com/en-in/pricing/calculator/).
 
